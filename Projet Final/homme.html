@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <link href="homme.css" rel="stylesheet" type="text/css"/>
+          
+        <!-- Icone Panier -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+          
+        <script type ="text/javascript" src="homme.js"></script>
+        <title>HUSH</title>
+      </head>
+      <body> 
+          
+          <!-- Barre de navigation -->
+          <div class="nav_bar">
+            <ul class="topnav">
+                
+                <li><img class="img_hush" src="./content/hush.png"></li>
+                
+                <li><a class="active" href="index.html">Accueil</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Produits</a>
+                                 <div class="dropdown-content">
+                                 <a id="lien" href="homme.html">Hommes</a>
+                                 <a id="lien" href="femme.html">Femmes</a>
+                                 <a id="lien" href="enfant.html">Enfants</a>
+                                 </div>
+                </li>
+                
+                <li><a href="#news">Contacts</a></li>
+                
+                <li class="right">
+                    <a id="panier" href="#panier">
+                        <span id="icon_panier" class="fa fa-shopping-basket"></span>
+                    </a>    
+                        <div class="dropdown-content-panier">
+                                 <div class="panier_contenu">
+                                     <div id="f_article_panier">
+                                        <img src="./content/tshirt7.jpg">
+                                        <h4>#HushLips</h4>
+                                        <h6>x1</h6>
+                                     </div>
+                                     <div id="s_article_panier">
+                                        <img src="./content/tshirt6.jpg">
+                                        <h4>#HushBeard</h4>
+                                        <h6>x1</h6>
+                                     </div>
+                                 </div>
+                                 <div class="voirpanier_btn"> <a id="lien" class="voirpanier_lien" href="panier.html">Mon Panier</a></div>
+                                 
+                        </div>
+                    
+                </li>
+            </ul>
+        </div>
+          
+        <div class="contenu">
+          <h2>Homme :</h2>
+            
+        <div class="list">
+        
+        <div class="articles1">
+          <div class="article">
+          <img src="./content/pullH5.jpg">
+          <h4>#HushLost</h4>
+          <h5>29.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/tshirt7.jpg">
+                <h4>#HushLips</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/tshirt6.jpg">
+                <h4>#HushBeard</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle" onclick="alert('hohoho')" ></i>
+          </div>
+        </div>
+            
+        <div class="3articles2">
+            <div class="article">
+          <img src="./content/tshirt5.jpg">
+                <h4>#HushFresh</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/tshirt4.jpg">
+                <h4>#HushVinyle</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/tshirt3.jpg">
+                <h4>#HushPoney</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+            
+        <div class="3articles3">  
+          <div class="article">
+          <img src="./content/tshirt2.jpg">
+              <h4>#HushInglorious</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/tshirt1.jpg">
+                <h4>#HushStar</h4>
+          <h5>19.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/pullH1.jpg">
+                <h4>#HushFlash</h4>
+          <h5>29.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+        </div>  
+            
+        <div class="3articles4">  
+          <div class="article">
+          <img src="./content/pullH2.jpg">
+              <h4>#HushIron</h4>
+          <h5>29.99€</h5>
+          <i id="circle" class="fas fa-plus-circle" onclick="addToCart()"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/pullH3.jpg">
+                <h4>#HushTribe</h4>
+          <h5>29.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+            
+            <div class="article">
+          <img src="./content/pullH4.jpg"> 
+                <h4>#HushBreizh</h4>
+          <h5>29.99€</h5>
+          <i id="circle" class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+         </div>   
+        </div>
+          <!-- first footer -->
+        <div class="footers"> 
+        <div class="first_footer">
+            
+            <div class="social_bar">
+                <a title="Facebook" href="https://www.facebook.com/HUSHGangCo/"><i class="fab fa-facebook-square"></i></a>
+                <a title="Instagram" href="https://www.instagram.com/hushftw/?hl=fr" ><i class="fab fa-instagram"></i></a>
+                <a title="Youtube" href="https://www.youtube.com/channel/UCl_j5YzRO-pEnhwYJK7GrsQ"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+          <!-- second footer -->
+          <div class="snd_footer">
+            
+            <div class="aide_et_info">
+                <h4>Aide &amp; Information</h4>
+                <a  href="#">Assistance</a>
+                <a  href="#" >Suivi commande</a>
+                <a  href="#">Livraison &amp; Retours</a>
+            </div>
+            <div class="a_propos">
+                <h4>À propos de HUSH</h4>
+                <a  href="#">À propos de HUSH</a>
+                <a  href="#" >HUSH recrute</a>
+                <a  href="#">Responsabilité des entreprises</a>
+                <a  href="#">Investisseurs</a>
+            </div>
+            <div class="contact">
+                <h4>Nous contacter :</h4>
+                <textarea rows="8" cols="55" placeholder="Votre message."></textarea>
+                <input id="send_button" type="button" value="Envoyer"> 
+            </div>  
+        </div>
+        </div>     
+          
+          
+          
+          
+          
+          
+          
+         
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+
+      </body>
+
+      </html>

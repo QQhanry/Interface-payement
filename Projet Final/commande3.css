@@ -1,0 +1,220 @@
+html{
+    margin: 0;
+    padding: 0;
+    
+    min-height: 100%;
+    
+    position: relative;
+}
+
+body{
+    margin: 100px ;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    background-color: white;
+}
+
+img{
+    
+}
+#principale{
+   
+    webkit-box-shadow: -8px 10px 20px 0px rgba(0,0,0,0.45);
+    moz-box-shadow: -8px 10px 20px 0px rgba(0,0,0,0.45);
+    box-shadow: -8px 10px 20px 0px rgba(0,0,0,0.45);
+    
+    height: 500px;
+    width: 500px;
+    background-color: #D7D9D8;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items : center;
+ 
+}
+
+#precedent{
+    margin-right: 10px;
+}
+
+#formulaire{
+    margin-top: -40px;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items : center;
+   
+}
+
+#conteneur{
+    position: absolute;
+    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+}
+
+
+#formulaire input[type="text"]{
+    
+    
+  width: 100%;
+  padding-top: 13px;
+  border: none;
+  border-radius: 0;
+  color: black;
+  background: transparent;
+  font-size: 13px;
+  transition: .3s ease;
+    
+}
+#group1{
+    margin-right: 10px;
+}
+#select1{
+    margin-right: 10px;
+}
+#select1, #select2{
+    width: 25%;
+}
+h4{
+  letter-spacing: .15em;
+  font: 14px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-right: 20px;
+   margin-top: 13px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+#date{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items : center;
+    
+    
+}
+
+#nom{
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+select {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor;
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  background: transparent;
+}
+select:focus, select:active {
+  outline: 0;
+  /*border-bottom-color: red;*/
+}
+
+input[type="button"]{
+   
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+    
+
+}
+
+
+
+
+
+
+
+
+.group {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+
+label {
+  position: absolute;
+  top: 12px;
+ 
+  letter-spacing: .15em;
+  font: 14px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: text;
+  transition: .25s ease;
+}
+
+
+
+.bar {
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  width: 100%;
+  height: 2px;
+  transition: .3s ease;
+  position: relative;
+}
+.bar:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: translateX(-100%);
+}
+
+::selection {
+  background: rgba(33, 150, 243, 0.3);
+}
+
+input:valid ~ label {
+  top: 0;
+  letter-spacing: .15em;
+  font: 9px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+ 
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+input:focus ~ label {
+  top: 0;
+  letter-spacing: .15em;
+  font: 9px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: black !important;
+}
+
+textarea{
+    resize: none;
+}

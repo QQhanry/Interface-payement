@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Commande</title>
+    <link rel="stylesheet" type="text/css" href="commande2.css">
+    <script type="text/javascript" src="commande.js"></script>
+</head>
+
+<body>
+
+    <img src="./content/2.png">
+    <div id="principale">
+
+    <div id="formulaire">
+    <center>
+    <select>
+    <option selected disabled>Mode de Livraison</option>
+    <option>Colissimo</option>
+    <option>Fedex</option>
+    <option>Chronopost</option>
+    <option>Autruche</option>
+    </select>
+    </center>
+    <br/>
+
+            <div class="group">
+            <input type="text" name="ville" id="Ville" onblur="verifV()" required="required" />
+            <label for="ville">Ville</label>
+            <div class="bar" id="bar3"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" name="numero" id="numero" onblur="verifNum()" required="required" />
+            <label for="numero">Numéro</label>
+            <div class="bar" id="bar4"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" name="adresse" id="adresse" onblur="verifA()" required="required" />
+            <label for="adresse">Adresse</label>
+            <div class="bar" id="bar5"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" name="complement_adresse" onblur="verifCA()" id="Complement" required="required" />
+            <label for="complement_adresse">Complément d'adresse</label>
+            <div class="bar" ></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" name="code_postal" id="Code" onblur="verifCode()" required="required" />
+            <label for="code_postal">Code postal</label>
+            <div class="bar" id="bar7"></div>
+            </div>
+
+    <!--<input type="text" name="ville" placeholder="Ville" />
+    <br/>
+    <input type="text" name="numéro" placeholder="Numéro" />
+    <br/>
+    <input type="text" name="adresse" placeholder="Adresse" />
+    <br/>
+    <input type="text" name="complement_adresse" placeholder="Complément d'adresse" />
+    <br/>
+    <input type="text" name="code_postal" placeholder="Code postal" onblur="verifPostal(this)"/>
+    <br/>
+
+-->
+    <select>
+    <option selected disabled>Pays</option>
+    <option>France</option>
+    <option>Gabon</option>
+    <option>Allemagne</option>
+    <option>Pologne</option>
+    </select>
+        <textarea rows="8" cols="55" placeholder="Indications supplémentaires..."></textarea>
+    </div>
+
+    <div id="conteneur">
+    <input id="precedent" type="button" value="Précédent" onClick="document.location='commande1.html'">
+    <input id="suivant" type="button" value="Suivant" onclick="verifAll2()">
+    </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

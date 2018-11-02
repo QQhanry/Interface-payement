@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Commande</title>
+    <link rel="stylesheet" type="text/css" href="commande3.css">
+	<script type="text/javascript" src="commande3.js"></script>
+</head>
+
+<body>
+    
+    <img src="./content/3.png">
+    <div id="principale">
+    
+    <div id="formulaire">
+    <center>
+    <select id="select0" onblur="VerifPaiement()">
+    <option selected disabled value="AucuneSelection">Moyen de Paiement</option>
+    <option>Visa</option>
+    <option>MasterCard</option>
+    <option>Paypal</option>
+    </select>
+    </center>
+    <br/>
+        <div id="nom">
+    
+            <div id="group1" class="group">        
+            <input type="text" id="nom1" name="nom" required="required" onblur="VerifNom()" />
+            <label for="nom1">Nom</label> 
+            <div id="bar1" class="bar"></div>    
+            </div>         
+            
+       
+            <div class="group">    
+            <input type="text" id="nom2" name="prenom" required="required"  onblur="VerifPrenom()" />
+            <label for="nom1">Prénom</label>
+            <div id="bar2" class="bar"></div> 
+            </div>
+        
+       </div>
+            <div class="group">    
+            <input type="text" name="numero_carte" required="required" id="carte" onblur="VerifCarte()"/>
+            <label for="numero_carte">Numéro de Carte</label>
+            <div id="bar3" class="bar"></div> 
+            </div>
+       
+            
+           
+            
+           
+<div id="date">    
+      <h4>Expiration :</h4>
+     
+        <select id="select1">
+    <option selected disabled value="AucuneSelection">Mois</option>
+    <option>Janvier</option>
+    <option>Février</option>
+    <option>Mars</option>
+    <option>Avril</option>        
+    <option>Mai</option>
+    <option>Juin</option>
+    <option>Juillet</option>
+    <option>Août</option>
+    <option>Septembre</option>
+    <option>Octobre</option>
+    <option>Novembre</option>
+    <option>Décembre</option>
+    </select>   
+        <select id="select2" onblur="VerifExpiration()">
+    <option selected disabled value="AucuneSelection">Année</option>
+    <option>2018</option>
+    <option>2019</option>
+    <option>2020</option>
+    <option>2021</option>
+    <option>2022</option>
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+    <option>2026</option>
+    <option>2027</option>
+    <option>2028</option>
+    <option>2029</option> 
+    <option>2030</option>                    
+    </select>   
+</div>       
+        
+            <div class="group">    
+            <input type="text" name="CVV" required="required" id="code" onblur="VerifCode()"/>
+            <label for="CVV">Code de vérification</label>
+            <div id="bar4" class="bar"></div> 
+            </div>
+       
+       
+    
+  
+    </div>    
+	
+    <div id="conteneur">
+    <input id="precedent" type="button" value="Précédent"  onClick="document.location='commande2.html'">
+    <input id ="suivant" type="button" value="Suivant"  onclick="test()">
+    </div>
+        
+    </div>
+
+
+</body>
+</html>

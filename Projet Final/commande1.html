@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Commande</title>
+    <link rel="stylesheet" type="text/css" href="commande1.css">
+    <script type ="text/javascript" src="commande.js"></script>
+</head>
+
+<body>
+
+    <img src="./content/1.png">
+    <div id="principale">
+
+
+
+   <div id="formulaire">
+
+    <div id="nom">
+
+            <div id="group1" class="group">
+            <input type="text" id="nom1" name="nom" onblur="verifN()" required="required" />
+            <label for="nom1">Nom</label>
+            <div class="bar" id="bar1"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" id="nom2" name="prenom" onblur="verifP()" required="required"  />
+            <label for="nom1">Prénom</label>
+            <div class="bar" id="bar2"></div>
+            </div>
+
+    </div>
+
+    <br/>
+    <br/>
+            <div class="group">
+            <input type="text" id="Ville" name="ville" onblur="verifV()" required="required" />
+            <label for="ville">Ville</label>
+            <div class="bar" id="bar3"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" id="numero" name="numero" onblur="verifNum()" required="required" />
+            <label for="numero">Numéro</label>
+            <div class="bar" id="bar4"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" id="adresse" name="adresse" onblur="verifA()" required="required" />
+            <label for="adresse">Adresse</label>
+            <div class="bar" id="bar5"></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" id="Complement" name="complement_adresse"  onblur="verifCA()" required="required" />
+            <label for="complement_adresse">Complément d'adresse</label>
+            <div class="bar" ></div>
+            </div>
+
+
+            <div class="group">
+            <input type="text" id="Code"name="code_postal" onblur="verifCode()" required="required" />
+            <label for="code_postal">Code postal</label>
+            <div class="bar" id="bar7"></div>
+            </div>
+
+    <!--<input type="text" name="ville" placeholder="Ville" />
+    <br/>
+    <input type="text" name="numéro" placeholder="Numéro" />
+    <br/>
+    <input type="text" name="adresse" placeholder="Adresse" />
+    <br/>
+    <input type="text" name="complement_adresse" placeholder="Complément d'adresse" />
+    <br/>
+    <input type="text" name="code_postal" placeholder="Code postal" onblur="verifPostal(this)"/>
+    <br/>
+
+-->
+    <select>
+    <option selected disabled >Pays</option>
+    <option>France</option>
+    <option>Gabon</option>
+    <option>Allemagne</option>
+    <option>Pologne</option>
+    </select>
+
+    <br/>
+    <br/>
+ <br/>
+
+    <br/>
+
+
+            <div class="group">
+            <input type="text" id="NumTel" name="tel" onblur="verifTel()" required="required" />
+            <label for="tel">Numéro de téléphone</label>
+            <div class="bar" id="bar8"></div>
+            </div>
+
+
+            <div class="group">
+            <input  type="text" id="mail" name="mail" onblur="verifMail()" required="required" />
+            <label for="mail">Adresse email</label>
+            <div class="bar" id="bar9"></div>
+            </div>
+
+   <!-- <input type="text" name="tel" placeholder="Numéro de téléphone" />
+       <br/>
+    <input type="text" name="email" placeholder="Adresse email" />
+    -->
+    </div>
+
+    <div id="suivant">
+        <input  type="button" value="Suivant" onclick="verifAll()" >
+
+    </div>
+
+
+    </div>
+
+
+</body>
+</html>
